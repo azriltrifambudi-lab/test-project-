@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google Adsense -->
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2813650131586223"
+    crossorigin="anonymous"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel - Upload Project File</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<!-- Display Ads -->
+<ins class="adsbygoogle"
+     style="display:block;margin:20px 0;"
+     data-ad-client="ca-pub-2813650131586223"
+     data-ad-slot="0000000000"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <div class="admin-container">
+    <h1>Admin Panel</h1>
+
+    <!-- LOGIN omitted here (we used direct admin page) -->
+
+    <div id="uploadBox" class="card">
+      <h2>Upload Project Baru</h2>
+
+      <label>Nama Project</label>
+      <input type="text" id="projectName" placeholder="Contoh: Editing Cinematic 01" />
+
+      <label>Link Pembelian (Sociabuzz)</label>
+      <input type="text" id="purchaseLink" placeholder="https://sociabuzz.com/..." />
+
+      <label>Pilih File (video / gambar preview)</label>
+      <input type="file" id="videoFile" accept="video/*,image/*" />
+
+      <button id="uploadBtn">Upload Project</button>
+      <p id="uploadStatus" style="margin-top:10px;color:#444"></p>
+    </div>
+
+    <a href="visitor.html" class="back-btn">← Kembali ke Halaman Pengunjung</a>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
